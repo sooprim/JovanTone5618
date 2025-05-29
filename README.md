@@ -116,20 +116,12 @@ The test suite includes:
 - Comprehensive unit tests
 - CORS enabled for cross-origin requests
 
+## Screenshots
+
+The following screenshots demonstrate the functionality of the application can be found in:
+[Screens](https://github.com/sooprim/JovanTone5618/tree/main/Screens)
+
 ## Author
 
 Jovan Tone 5618
 
-## Screenshots
-
-The following screenshots demonstrate the functionality of the application:
-
-1. [Book Controller Endpoints](https://github.com/sooprim/JovanTone5618/blob/main/Screens/BookController.png)
-2. [Client Controller Endpoints](https://github.com/sooprim/JovanTone5618/blob/main/Screens/ClientController.png)
-3. [Database Diagram](https://github.com/sooprim/JovanTone5618/blob/main/Screens/DatabaseDiagram.png)
-4. [Database Tables](https://github.com/sooprim/JovanTone5618/blob/main/Screens/DatabaseTables.png)
-5. [Project Structure](https://github.com/sooprim/JovanTone5618/blob/main/Screens/ProjectStructure.png)
-6. [Swagger UI](https://github.com/sooprim/JovanTone5618/blob/main/Screens/SwaggerUI.png)
-7. [Unit Tests](https://github.com/sooprim/JovanTone5618/blob/main/Screens/UnitTests.png)
-
-These screenshots are located in the [Screens](https://github.com/sooprim/JovanTone5618/tree/main/Screens) directory of the repository.
