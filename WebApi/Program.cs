@@ -13,17 +13,14 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings")["DefaultConnection"]));
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-// Register repositories
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 
-// Register services
 builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<IClientService, ClientService>();
 
@@ -40,7 +37,6 @@ builder.Services.AddSwaggerGen(c =>
     c.EnableAnnotations();
 });
 
-// Add CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -54,13 +50,12 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => 
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jovan Tone 5618 v1");
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Jovan Tone 5618");
         c.RoutePrefix = "swagger";
     });
 }
@@ -70,4 +65,4 @@ app.UseCors("AllowAll");
 app.UseAuthorization();
 app.MapControllers();
 
-app.Run(); 
+app.Run();
