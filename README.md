@@ -1,6 +1,6 @@
 # Library Management System
 
-This project is a proof-of-concept web application for managing a library's books and clients. Built with .NET 8.0, it follows clean architecture principles and provides comprehensive functionality for managing book loans and client memberships. The application includes full support for tracking books, managing client information, and handling book loans.
+This project is a web application for managing a library's books and clients, built with .NET 8.0. It follows clean architecture principles and provides comprehensive functionality for managing book loans and client memberships. The application includes full support for tracking books, managing client information, and handling book loans.
 
 ## Technology Stack
 
@@ -9,7 +9,6 @@ This project is a proof-of-concept web application for managing a library's book
 - SQL Server
 - AutoMapper
 - xUnit for testing
-- Clean (Layered) Architecture
 
 ## Project Structure
 
